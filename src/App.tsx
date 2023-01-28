@@ -5,8 +5,8 @@ import Main from "./modules/Main";
 const App: React.FC = () => {
   return (
     <div>
-      <Main />
       <Navbar />
+      <Main />
     </div>
   );
 };

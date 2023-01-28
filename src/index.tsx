@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider as AntdConfigProvider } from "antd";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import "./index.scss";
 import "react-loading-skeleton/dist/skeleton.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/styles/index.scss";
@@ -20,7 +21,9 @@ root.render(
         },
       }}
     >
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </AntdConfigProvider>
   </React.StrictMode>
 );
