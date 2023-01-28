@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "./modules/Navbar";
-import Main from "./modules/Main";
+import { Routes, Route } from "react-router-dom";
+import SearchPage from "./modules/SearchPage";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Navbar />
-      <Main />
+      <Routes>
+        <Route path="/search" element={<SearchPage />} />
+      </Routes>
     </div>
   );
 };
